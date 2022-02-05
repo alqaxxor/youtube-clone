@@ -1,0 +1,57 @@
+@import "../../assets/scss/variables/font.scss";
+@import "../../assets/scss/variables/colors.scss";
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 70px 30px 32px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  background-color: #17171e;
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    &-btn {
+      background: rgb(29, 27, 27);
+      border: none;
+      cursor: pointer;
+      margin-right: 28px;
+    }
+  }
+  .search {
+    margin-left: 60px;
+    align-items: center;
+    margin-right: 300px;
+    &__input {
+      margin-right: auto;
+      width: 700px;
+      height: 44px;
+      background: #2c2c33;
+      border-radius: 22px;
+      border: none;
+      padding: 12px 23px;
+      background-image: url("../../assets/img/search_icon.svg");
+      background-position: right 12px center;
+      background-repeat: no-repeat;
+
+      &::placeholder {
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        opacity: 0.4;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__right {
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
